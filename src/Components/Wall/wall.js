@@ -32,8 +32,8 @@ class Wall extends React.Component{
             // Here we can embedd our html tags and logics
             // Embedding Brick Component inside wall component
             <div className="wall-container">
-                <Brick/>
-                <Brick/>
+                <Brick />
+                <Brick />
             </div>
         )
 

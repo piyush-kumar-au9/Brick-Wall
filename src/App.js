@@ -11,7 +11,7 @@ function App() {
   return (
 
     // React Component always in TitleCase or they start with Capital Alphabets to differ from HTML Components
-    <Wall/>
+    <Wall />
 
   );
 }
