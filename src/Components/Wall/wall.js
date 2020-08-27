@@ -27,5 +27,9 @@ class Wall extends React.Component{
         )
 
     }
+
 }
 
+/* Export is done so that this component can be used in other React Components */
+/* Default export */
+export default Wall;
