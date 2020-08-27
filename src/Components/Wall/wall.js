@@ -7,8 +7,13 @@ import React from 'react';
 /* Importing my css file for styling the component */
 import "./style.css"
 
+
+/* Importing brick component from Components folder */
+import Brick from "../Brick/brick.js"
+
 /* To create a class component */
 /* To make the class component a React component */
+// Class Based Component as in wall component we will store brick component data
 class Wall extends React.Component{
 
     /* Various ways to declare a function
@@ -25,7 +30,11 @@ class Wall extends React.Component{
     render = () =>{
         return(
             // Here we can embedd our html tags and logics
-            <div className="wall-container"></div>
+            // Embedding Brick Component inside wall component
+            <div className="wall-container">
+                <Brick/>
+                <Brick/>
+            </div>
         )
 
     }
