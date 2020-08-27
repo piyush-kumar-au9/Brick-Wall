@@ -22,7 +22,7 @@ class Wall extends React.Component{
    constructor(props){
        super(props);
     this.state = {
-          bricks: []
+          bricks: [1,2,3,4]
       }
     }   
 
@@ -53,9 +53,13 @@ class Wall extends React.Component{
         return(
             // Here we can embedd our html tags and logics
             // Embedding Brick Component inside wall component
+            // key is used for unique identification of React Component
             <div className="wall-container">
-                <Brick name="Brick 1"/>
-                <Brick name="Brick 2"/>
+                {this.state.bricks.map((brick) => {
+                    return <Brick key={brick} name={brick} />
+                }
+                
+                )}
             </div>
         )
 

@@ -2,5 +2,12 @@
     width: 200px;
     height: 200px;
     background-color: saddlebrown;
-    margin: 10px; /* Represent the outer space */ 
+    margin: 10px; /* Represent the outer space */
+    font-size: 40px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
