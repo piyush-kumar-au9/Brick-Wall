@@ -12,3 +12,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: gold;
+    color: black;
+    border: none;
+}

@@ -36,6 +36,19 @@ class Wall extends React.Component{
 
    */
 
+   /* Event listener */
+   // This function will be passed in the Button onClick attribute to add more bricks
+   // setState is to used to update the data so that view can be updated as normal operation will change the data but no change in view will be reflected
+   addOnClicks = () =>{
+       // ... (spread operator) is used to copy a content of an array to other array in JS
+       const newBricksArray = [ ...this.state.bricks ];
+       newBricksArray.push(newBricksArray.length+1);
+       // this.state.bricks.push(5);
+       this.setState({
+            bricks: newBricksArray
+       })
+   }
+
 
 
     /* Various ways to declare a function
@@ -54,12 +67,14 @@ class Wall extends React.Component{
             // Here we can embedd our html tags and logics
             // Embedding Brick Component inside wall component
             // key is used for unique identification of React Component
+            // Button tags can be made functional using onClick attribute
             <div className="wall-container">
                 {this.state.bricks.map((brick) => {
                     return <Brick key={brick} name={brick} />
                 }
                 
                 )}
+                <button className="btn" onClick={this.addOnClicks}>Add More Bricks</button>
             </div>
         )
 
