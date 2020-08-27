@@ -8,9 +8,14 @@ import "./brickstyle.css"
 // Functional Component as we don't want to store any data in it
 // const is used to define the variable in JS which can't be changed once value is assigned to it
 /* let is the keyword to define a mutable variable means which can be reassigned */
-const Brick = () => {
+// To use JS inside html use {}
+
+const Brick = (props) => {
+    // console.log("How does my props look like", props);
     return(
-        <div className = "brick-container"></div>
+        <div className = "brick-container">
+            {props.name}
+        </div>
     )
 }
 

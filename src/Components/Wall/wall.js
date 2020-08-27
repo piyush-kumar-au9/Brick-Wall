@@ -15,6 +15,28 @@ import Brick from "../Brick/brick.js"
 /* To make the class component a React component */
 // Class Based Component as in wall component we will store brick component data
 class Wall extends React.Component{
+    /*
+    state is a data that a class based component holds and that data belongs to that component only
+    */
+   // {} represent object - key value pair (similar to dictionary in python)
+   constructor(props){
+       super(props);
+    this.state = {
+          bricks: []
+      }
+    }   
+
+
+   /* Some other ways to define state
+
+      state = {
+       bricks: []
+   }
+
+
+   */
+
+
 
     /* Various ways to declare a function
 
@@ -32,8 +54,8 @@ class Wall extends React.Component{
             // Here we can embedd our html tags and logics
             // Embedding Brick Component inside wall component
             <div className="wall-container">
-                <Brick />
-                <Brick />
+                <Brick name="Brick 1"/>
+                <Brick name="Brick 2"/>
             </div>
         )
 
