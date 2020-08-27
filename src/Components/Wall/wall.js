@@ -4,6 +4,8 @@
 /* To make a file a React componet always import React from react file*/
 import React from 'react';
 
+/* Importing my css file for styling the component */
+import "./style.css"
 
 /* To create a class component */
 /* To make the class component a React component */
@@ -23,7 +25,7 @@ class Wall extends React.Component{
     render = () =>{
         return(
             // Here we can embedd our html tags and logics
-            <p>Hello My first React App</p>
+            <div className="wall-container"></div>
         )
 
     }
