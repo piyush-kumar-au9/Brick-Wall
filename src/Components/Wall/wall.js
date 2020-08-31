@@ -49,7 +49,8 @@ class Wall extends React.Component{
        })
    }
 
-
+    /* Event listener */
+   // This function will be passed in the Button onClick attribute to delete bricks
    deleteOnClicks = () =>{
         // ... (spread operator) is used to copy a content of an array to other array in JS
         const newBricksArray = [ ...this.state.bricks ];
