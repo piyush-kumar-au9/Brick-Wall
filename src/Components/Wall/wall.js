@@ -50,6 +50,17 @@ class Wall extends React.Component{
    }
 
 
+   deleteOnClicks = () =>{
+        // ... (spread operator) is used to copy a content of an array to other array in JS
+        const newBricksArray = [ ...this.state.bricks ];
+        newBricksArray.pop();
+        // this.state.bricks.push(5);
+        this.setState({
+            bricks: newBricksArray
+        })
+    }
+
+
 
     /* Various ways to declare a function
 
@@ -75,6 +86,7 @@ class Wall extends React.Component{
                 
                 )}
                 <button className="btn" onClick={this.addOnClicks}>Add More Bricks</button>
+                <button className="btn_2" onClick={this.deleteOnClicks}>Delete Bricks</button>
             </div>
         )
 
